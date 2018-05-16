@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Class-Path: libs/scala-actors-2.11.0.jar libs/scala-actors-migration_2
+ .11-1.1.0.jar libs/scala-library.jar libs/scala-parser-combinators_2.
+ 11-1.0.4.jar libs/scala-reflect.jar libs/scala-swing_2.11-1.0.2.jar l
+ ibs/scala-xml_2.11-1.0.4.jar libs/elasticsearch-spark-20_2.11-5.1.1.j
+ ar libs/spark-sql_2.11-2.2.1.jar libs/spark-core_2.11-2.2.1.jar
+Main-Class: es2hdfs
+
