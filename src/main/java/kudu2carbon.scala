@@ -10,7 +10,7 @@ import org.apache.kudu.spark.kudu._
 import org.apache.carbondata.core.util.path.CarbonStorePath
 import spark.jobserver.SparkSessionJob
 
-object kudu2carbon extends SparkSessionJob {
+object kudu2carbon2 extends SparkSessionJob {
   def main(args: Array[String]): Unit = {
 //    val spark = SparkSession
 //      .builder()
