@@ -26,6 +26,22 @@ object hdfs2kudu {
     kuduContext.createTable("test_table9", df2.schema, Seq("productid","sourceid","deviceproductoffset"), kuduTableOptions)
     kuduContext.insertRows(df2, "test_table9")
     kuduContext.deleteTable("test_table9")
+
+    /*make data
+    val df3 = df2.withColumn("productid1",df2("productid")+1)
+val df4 = df3.drop("productid").withColumnRenamed("productid1","productid")
+
+
+val df5 = df4.withColumn("productid1",df4("productid")+1)
+val df6 = df5.drop("productid").withColumnRenamed("productid1","productid")
+
+val df7 = df6.withColumn("productid1",df6("productid")+1)
+val df8 = df7.drop("productid").withColumnRenamed("productid1","productid")
+
+val df9 = df8.withColumn("productid1",df8("productid")+1)
+val df10 = df9.drop("productid").withColumnRenamed("productid1","productid")
+     */
+
     //val df2 = spark.sqlContext.read.options(Map("kudu.master" -> "172.20.3.1:7051","kudu.table" -> "test_table7")).kudu
 
     //val kuduContext = new KuduContext("172.20.3.1:7051", spark.sqlContext.sparkContext)
