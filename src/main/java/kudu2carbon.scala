@@ -4,13 +4,19 @@
 
 import java.io.File
 
+import com.typesafe.config.Config
 import org.apache.spark.sql.{SaveMode, SparkSession, CarbonEnv}
 import org.apache.spark.sql.CarbonSession._
 import org.apache.kudu.spark.kudu._
 import org.apache.carbondata.core.util.path.CarbonStorePath
+import org.scalactic._
 import spark.jobserver.SparkSessionJob
+import spark.jobserver.api.{SingleProblem, ValidationProblem, JobEnvironment}
 
-object kudu2carbon2 extends SparkSessionJob {
+import scala.util.Try
+
+object kudu2carbon extends SparkSessionJob {
+  /*
   def main(args: Array[String]): Unit = {
 //    val spark = SparkSession
 //      .builder()
@@ -42,5 +48,48 @@ object kudu2carbon2 extends SparkSessionJob {
       .mode(SaveMode.Overwrite)
       .save()
   }
+  */
+
+  type JobData = List[String]
+  type JobOutput = collection.Map[String, Long]
+
+  override def runJob(sparkSession: SparkSession, runtime: JobEnvironment, data: JobData): JobOutput = {
+    //sparkSession.sparkContext.parallelize(data).countByValue
+    val kuduTableName = data(0)
+    val carbonTableName = data(1)
+
+    val warehouse = new File("./warehouse").getCanonicalPath
+    val metastore = new File("./metastore").getCanonicalPath
+    val spark = SparkSession
+      .builder()
+      .appName("StreamExample")
+      .config("spark.sql.warehouse.dir", warehouse)
+      .getOrCreateCarbonSession(warehouse, metastore)
+
+    val df2 = spark.sqlContext.read.options(Map("kudu.master" -> "172.20.3.1:7051",
+      "kudu.faultTolerantScan" -> "true","kudu.table" -> kuduTableName)).kudu
+    df2.write
+      .format("carbondata")
+      .option("tableName", carbonTableName)
+      .option("compress", "true")
+      .option("tempCSV", "false")
+      .mode(SaveMode.Overwrite)
+      .save()
+    Map("result" -> 100000)
+  }
+
+
+  override def validate(sparkSession: SparkSession, runtime: JobEnvironment, config: Config):
+  //JobData = { config.getString("kuduTableName")::config.getString("kuduTableName")::Nil }
+  JobData Or Every[ValidationProblem] = {Try(List( config.getString("kuduTableName"),config.getString("carbonTableName")))
+  .map(words => Good(words))
+  .getOrElse(Bad(One(SingleProblem("input param error"))))}
+//  JobData Or Every[ValidationProblem] = {
+//    Try(config.getString("input.string").split(" ").toSeq)
+//      .map(words => Good(words))
+//      .getOrElse(Bad(One(SingleProblem("No input.string param"))))
+//  }
+
+
 
 }

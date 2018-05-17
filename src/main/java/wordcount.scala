@@ -9,7 +9,8 @@ import scala.util.Try
 object WordCountExampleSparkSession extends SparkSessionJob {
   type JobData = Seq[String]
   type JobOutput = collection.Map[String, Long]
-
+  //config 是入参
+  //
   override def runJob(sparkSession: SparkSession, runtime: JobEnvironment, data: JobData): JobOutput =
     sparkSession.sparkContext.parallelize(data).countByValue
 
