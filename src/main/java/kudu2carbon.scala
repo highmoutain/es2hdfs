@@ -15,7 +15,7 @@ import spark.jobserver.api.{SingleProblem, ValidationProblem, JobEnvironment}
 
 import scala.util.Try
 
-object kudu2carbon extends SparkSessionJob {
+object kudu2carbonWithJobServer extends SparkSessionJob {
   /*
   def main(args: Array[String]): Unit = {
 //    val spark = SparkSession
@@ -67,7 +67,7 @@ object kudu2carbon extends SparkSessionJob {
       .getOrCreateCarbonSession(warehouse, metastore)
 
     val df2 = spark.sqlContext.read.options(Map("kudu.master" -> "172.20.3.1:7051",
-      "kudu.faultTolerantScan" -> "true","kudu.table" -> kuduTableName)).kudu
+      "kudu.faultTolerantScan" -> "true", "kudu.table" -> kuduTableName)).kudu
     df2.write
       .format("carbondata")
       .option("tableName", carbonTableName)
@@ -81,15 +81,17 @@ object kudu2carbon extends SparkSessionJob {
 
   override def validate(sparkSession: SparkSession, runtime: JobEnvironment, config: Config):
   //JobData = { config.getString("kuduTableName")::config.getString("kuduTableName")::Nil }
-  JobData Or Every[ValidationProblem] = {Try(List( config.getString("kuduTableName"),config.getString("carbonTableName")))
-  .map(words => Good(words))
-  .getOrElse(Bad(One(SingleProblem("input param error"))))}
-//  JobData Or Every[ValidationProblem] = {
-//    Try(config.getString("input.string").split(" ").toSeq)
-//      .map(words => Good(words))
-//      .getOrElse(Bad(One(SingleProblem("No input.string param"))))
-//  }
+  JobData Or Every[ValidationProblem] = {
+    Try(List(config.getString("kuduTableName"), config.getString("carbonTableName")))
+      .map(words => Good(words))
+      .getOrElse(Bad(One(SingleProblem("input param error"))))
+  }
 
+  //  JobData Or Every[ValidationProblem] = {
+  //    Try(config.getString("input.string").split(" ").toSeq)
+  //      .map(words => Good(words))
+  //      .getOrElse(Bad(One(SingleProblem("No input.string param"))))
+  //  }
 
 
 }
