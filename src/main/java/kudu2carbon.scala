@@ -68,13 +68,16 @@ object kudu2carbonWithJobServer extends SparkSessionJob {
 
     val df2 = spark.sqlContext.read.options(Map("kudu.master" -> "172.20.3.1:7051",
       "kudu.faultTolerantScan" -> "true", "kudu.table" -> kuduTableName)).kudu
-    df2.write
-      .format("carbondata")
-      .option("tableName", carbonTableName)
-      .option("compress", "true")
-      .option("tempCSV", "false")
-      .mode(SaveMode.Overwrite)
-      .save()
+    //改为注册为临时表，用sql语句试
+    df2.registerTempTable("temp")
+    spark.sql("insert overwrite table profile_carbondata2  select productid , sourceid , deviceproductoffset , age , appversioncode , appversionname , birthday , brandid , browserid , carrierid , channelid , childstatus , childstatusid , cityid , countryid , cur_appversioncode , cur_appversionname , cur_carrierid , cur_channelid , cur_cityid , cur_countryid , cur_ip , cur_networkid , cur_osid , cur_provinceid , deviceid , educational , educationalid , email , firm , firstlogintime , firstvisittime , gender , ip , isaccountlastupdate , islastupdate , lastsessiontime , marriage , marriageid , mobileid , name , networkid , organizationid , osid , personcity , personcityid , personcountry , personcountryid , personprovince , personprovinceid , pixelid , platformid , profession , professionid , provinceid , relatedaccountid , relatedaccountproductoffset , telephone , test_firm  from temp")
+//    df2.write
+//      .format("carbondata")
+//      .option("tableName", carbonTableName)
+//      .option("compress", "true")
+//      .option("tempCSV", "false")
+//      .mode(SaveMode.Overwrite)
+//      .save()
     Map("result" -> 100000)
   }
 
