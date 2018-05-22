@@ -39,6 +39,19 @@ object kudu2carbonSS {
 
     }
 
+    val kuduprofiletableName = postgprop.getProperty("kuduprofiletable.name")
+    println("kuduprofiletable:"+kuduprofiletableName)
+    if (kuduprofiletableName.isEmpty || kuduprofiletableName == null) {
+      throw new Exception("kuduprofiletableName.name is null")
+
+    }
+    val carbonProfileTableName = postgprop.getProperty("carbonProfiletable.name")
+    println("carbonProfileTableName:"+carbonProfileTableName)
+    if (carbonProfileTableName.isEmpty || carbonProfileTableName == null) {
+      throw new Exception("carbonProfiletable.name is null")
+
+    }
+
     val kudumaster = postgprop.getProperty("kudu.master")
     if (kudumaster.isEmpty || kudumaster == null) {
       throw new Exception("kudumaster is null")
@@ -48,6 +61,13 @@ object kudu2carbonSS {
     println("insertSql:"+insertSql)
     if (insertSql.isEmpty || insertSql == null) {
       throw new Exception("insertSql is null")
+
+    }
+
+    val insertProfileSql = postgprop.getProperty("insertProfileSql")
+    println("insertProfileSql:"+insertProfileSql)
+    if (insertProfileSql.isEmpty || insertProfileSql == null) {
+      throw new Exception("insertProfileSql is null")
 
     }
     var interval : Long = 60
@@ -87,6 +107,11 @@ object kudu2carbonSS {
       //改为注册为临时表，用sql语句试
       df2.registerTempTable("temp")
       spark.sql(insertSql)
+
+      val dfprofile = spark.sqlContext.read.options(Map("kudu.master" -> kudumaster,
+        "kudu.faultTolerantScan" -> "true", "kudu.table" -> kuduprofiletableName)).kudu
+      dfprofile.registerTempTable("tempProfile")
+      spark.sql(insertProfileSql)
       //spark.sql("insert overwrite table profile_carbondata2  select productid , sourceid , deviceproductoffset , age , appversioncode , appversionname , birthday , brandid , browserid , carrierid , channelid , childstatus , childstatusid , cityid , countryid , cur_appversioncode , cur_appversionname , cur_carrierid , cur_channelid , cur_cityid , cur_countryid , cur_ip , cur_networkid , cur_osid , cur_provinceid , deviceid , educational , educationalid , email , firm , firstlogintime , firstvisittime , gender , ip , isaccountlastupdate , islastupdate , lastsessiontime , marriage , marriageid , mobileid , name , networkid , organizationid , osid , personcity , personcityid , personcountry , personcountryid , personprovince , personprovinceid , pixelid , platformid , profession , professionid , provinceid , relatedaccountid , relatedaccountproductoffset , telephone , test_firm  from temp")
       //spark.sql("insert overwrite table behavior  select eventid ,_td_current_appversion ,_td_current_city ,_td_current_country  ,_td_current_network  ,_td_current_operator  ,_td_current_province  ,_td_event_count  ,_td_interval_duration  ,event  ,eventName  ,eventType  ,startTime   from temp")
     })
