@@ -21,11 +21,11 @@ object hdfs2kudu {
       "kudu.faultTolerantScan" -> "true")).kudu
     val kuduContext = new KuduContext("172.20.3.1:7051", spark.sqlContext.sparkContext)
     val kuduTableOptions = new CreateTableOptions()
-    kuduTableOptions.addHashPartitions(List("productid","sourceid","deviceproductoffset"),hashPartition.toInt).setNumReplicas(1)
+    kuduTableOptions.addHashPartitions(List("productid", "sourceid", "deviceproductoffset", "lastsessiontime"), hashPartition.toInt).setNumReplicas(1)
     //kuduTableOptions.setRangePartitionColumns(List("productid","sourceid","deviceproductoffset")).setNumReplicas(1)
-    kuduContext.createTable("test_table9", df2.schema, Seq("productid","sourceid","deviceproductoffset"), kuduTableOptions)
-    kuduContext.insertRows(df2, "test_table9")
-    kuduContext.deleteTable("test_table9")
+    kuduContext.createTable("test_table10", df2.schema, Seq("productid", "sourceid", "deviceproductoffset", "lastsessiontime"), kuduTableOptions)
+    kuduContext.insertRows(df2, "test_table10")
+    kuduContext.deleteTable("test_table10")
 
     /*make data
     val df3 = df2.withColumn("productid1",df2("productid")+1)
