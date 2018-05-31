@@ -188,15 +188,15 @@ object kudu2carbonSS extends Watcher {
         "kudu.faultTolerantScan" -> "true", "kudu.table" -> kuduprofiletableName)).kudu
 
       dfprofile.registerTempTable("tempt")
-      val max = spark.sql("SELECT MAX(lastsessiontime) as maxval FROM tempt").
-        collect()(0).getLong(0)
+      if (!dfprofile.rdd.isEmpty()) {
+        val max = spark.sql("SELECT MAX(process_time) as maxval FROM tempt").
+          collect()(0).getLong(0)
 
-      spark.sql("select productid , sourceid , deviceproductoffset , 20 as age , appversioncode , appversionname , birthday , brandid , browserid , carrierid , channelid , childstatus , childstatusid , cityid , countryid , cur_appversioncode , cur_appversionname , cur_carrierid , cur_channelid , cur_cityid , cur_countryid , cur_ip , cur_networkid , cur_osid , cur_provinceid , deviceid , educational , educationalid , email , firm , firstlogintime , firstvisittime , gender , ip , isaccountlastupdate , islastupdate , lastsessiontime , marriage , marriageid , mobileid , name , networkid , organizationid , osid , personcity , personcityid , personcountry , personcountryid , personprovince , personprovinceid , pixelid , platformid , profession , professionid , provinceid , relatedaccountid , relatedaccountproductoffset , telephone , test_firm from tempt")
-        .registerTempTable("temp")
-      spark.sql(realProfileSql)
-      zk.setData(pathPartitionId, newPid.toString.getBytes, -1)
-      zk.setData(pathLastsessiontime, max.toString.getBytes, -1)
-
+        dfprofile.registerTempTable("temp")
+        spark.sql(realProfileSql)
+        zk.setData(pathPartitionId, newPid.toString.getBytes, -1)
+        zk.setData(pathLastsessiontime, max.toString.getBytes, -1)
+      }
       //spark.sql("insert overwrite table profile_carbondata2  select productid , sourceid , deviceproductoffset , age , appversioncode , appversionname , birthday , brandid , browserid , carrierid , channelid , childstatus , childstatusid , cityid , countryid , cur_appversioncode , cur_appversionname , cur_carrierid , cur_channelid , cur_cityid , cur_countryid , cur_ip , cur_networkid , cur_osid , cur_provinceid , deviceid , educational , educationalid , email , firm , firstlogintime , firstvisittime , gender , ip , isaccountlastupdate , islastupdate , lastsessiontime , marriage , marriageid , mobileid , name , networkid , organizationid , osid , personcity , personcityid , personcountry , personcountryid , personprovince , personprovinceid , pixelid , platformid , profession , professionid , provinceid , relatedaccountid , relatedaccountproductoffset , telephone , test_firm  from temp")
       //spark.sql("insert overwrite table behavior  select eventid ,_td_current_appversion ,_td_current_city ,_td_current_country  ,_td_current_network  ,_td_current_operator  ,_td_current_province  ,_td_event_count  ,_td_interval_duration  ,event  ,eventName  ,eventType  ,startTime   from temp")
     })
