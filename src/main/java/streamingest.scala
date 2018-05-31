@@ -16,6 +16,7 @@ object streamingest {
 //      .appName("streamingest")
 //      .getOrCreate()
     val tableName = args(0)
+
     val pqtpath = args(1)
     val warehouse = new File("./warehouse").getCanonicalPath
     val metastore = new File("./metastore").getCanonicalPath
