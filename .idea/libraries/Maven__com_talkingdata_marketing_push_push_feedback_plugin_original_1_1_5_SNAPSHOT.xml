@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.talkingdata.marketing.push:push.feedback.plugin:original:1.1.5-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/marketing/push/push.feedback.plugin/1.1.5-SNAPSHOT/push.feedback.plugin-1.1.5-20181030.060824-1-original.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/marketing/push/push.feedback.plugin/1.1.5-SNAPSHOT/push.feedback.plugin-1.1.5-20181030.060824-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/marketing/push/push.feedback.plugin/1.1.5-SNAPSHOT/push.feedback.plugin-1.1.5-20181030.060824-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

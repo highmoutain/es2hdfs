@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.carbondata:carbondata-spark-datasource:1.6.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/carbondata/carbondata-spark-datasource/1.6.0-SNAPSHOT/carbondata-spark-datasource-1.6.0-20190731.074051-6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/carbondata/carbondata-spark-datasource/1.6.0-SNAPSHOT/carbondata-spark-datasource-1.6.0-20190731.074051-6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/carbondata/carbondata-spark-datasource/1.6.0-SNAPSHOT/carbondata-spark-datasource-1.6.0-20190731.074051-6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

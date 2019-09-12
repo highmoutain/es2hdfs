@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.carbondata:carbondata-hive:1.6.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/carbondata/carbondata-hive/1.6.0-SNAPSHOT/carbondata-hive-1.6.0-20190731.073822-5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/carbondata/carbondata-hive/1.6.0-SNAPSHOT/carbondata-hive-1.6.0-20190731.073822-5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/carbondata/carbondata-hive/1.6.0-SNAPSHOT/carbondata-hive-1.6.0-20190731.073822-5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

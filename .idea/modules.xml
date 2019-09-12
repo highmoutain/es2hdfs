@@ -2,7 +2,60 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/Indexservice.iml" filepath="$PROJECT_DIR$/../IndexService/Indexservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../analytics-temp-patch/analytics-temp-patch.iml" filepath="$PROJECT_DIR$/../analytics-temp-patch/analytics-temp-patch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../analytics-idmapping/analytics.idmapping.iml" filepath="$PROJECT_DIR$/../analytics-idmapping/analytics.idmapping.iml" />
+      <module fileurl="file://D:/kankan/太平洋/analytics.processor.5.0.1/analytics.processor.5.0.1/analytics.proccessor.iml" filepath="D:/kankan/太平洋/analytics.processor.5.0.1/analytics.processor.5.0.1/analytics.proccessor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../analytics-processor-spark/analytics.processor.spark.iml" filepath="$PROJECT_DIR$/../analytics-processor-spark/analytics.processor.spark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../analytics-reportservice/analytics.reportservice.iml" filepath="$PROJECT_DIR$/../analytics-reportservice/analytics.reportservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../analytics.streaming.storm/analytics.streaming.storm.iml" filepath="$PROJECT_DIR$/../analytics.streaming.storm/analytics.streaming.storm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../analytics.streaming.storm-release5.0.0.4/analytics.streaming.storm (1).iml" filepath="$PROJECT_DIR$/../analytics.streaming.storm-release5.0.0.4/analytics.streaming.storm (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/common/bitmap/bitmap.iml" filepath="$PROJECT_DIR$/../IndexService/common/bitmap/bitmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/broker/broker.iml" filepath="$PROJECT_DIR$/../IndexService/broker/broker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/broker/broker-client/broker-client.iml" filepath="$PROJECT_DIR$/../IndexService/broker/broker-client/broker-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/broker/broker-common/broker-common.iml" filepath="$PROJECT_DIR$/../IndexService/broker/broker-common/broker-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/broker/broker-server/broker-server.iml" filepath="$PROJECT_DIR$/../IndexService/broker/broker-server/broker-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/common/cache/cache.iml" filepath="$PROJECT_DIR$/../IndexService/common/cache/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/assembly/carbondata-assembly.iml" filepath="$PROJECT_DIR$/../carbondata/assembly/carbondata-assembly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/datamap/bloom/carbondata-bloom.iml" filepath="$PROJECT_DIR$/../carbondata/datamap/bloom/carbondata-bloom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/tools/cli/carbondata-cli.iml" filepath="$PROJECT_DIR$/../carbondata/tools/cli/carbondata-cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/common/carbondata-common.iml" filepath="$PROJECT_DIR$/../carbondata/common/carbondata-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/core/carbondata-core.iml" filepath="$PROJECT_DIR$/../carbondata/core/carbondata-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/datamap/examples/carbondata-datamap-examples.iml" filepath="$PROJECT_DIR$/../carbondata/datamap/examples/carbondata-datamap-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/examples/spark2/carbondata-examples.iml" filepath="$PROJECT_DIR$/../carbondata/examples/spark2/carbondata-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/examples/flink/carbondata-examples-flink.iml" filepath="$PROJECT_DIR$/../carbondata/examples/flink/carbondata-examples-flink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/hadoop/carbondata-hadoop.iml" filepath="$PROJECT_DIR$/../carbondata/hadoop/carbondata-hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/integration/hive/carbondata-hive.iml" filepath="$PROJECT_DIR$/../carbondata/integration/hive/carbondata-hive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/datamap/lucene/carbondata-lucene.iml" filepath="$PROJECT_DIR$/../carbondata/datamap/lucene/carbondata-lucene.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/datamap/mv/core/carbondata-mv-core.iml" filepath="$PROJECT_DIR$/../carbondata/datamap/mv/core/carbondata-mv-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/datamap/mv/plan/carbondata-mv-plan.iml" filepath="$PROJECT_DIR$/../carbondata/datamap/mv/plan/carbondata-mv-plan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/integration/presto/carbondata-presto.iml" filepath="$PROJECT_DIR$/../carbondata/integration/presto/carbondata-presto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/processing/carbondata-processing.iml" filepath="$PROJECT_DIR$/../carbondata/processing/carbondata-processing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/integration/spark-common/carbondata-spark-common.iml" filepath="$PROJECT_DIR$/../carbondata/integration/spark-common/carbondata-spark-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/integration/spark-common-cluster-test/carbondata-spark-common-cluster-test.iml" filepath="$PROJECT_DIR$/../carbondata/integration/spark-common-cluster-test/carbondata-spark-common-cluster-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/integration/spark-common-test/carbondata-spark-common-test.iml" filepath="$PROJECT_DIR$/../carbondata/integration/spark-common-test/carbondata-spark-common-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/integration/spark-datasource/carbondata-spark-datasource.iml" filepath="$PROJECT_DIR$/../carbondata/integration/spark-datasource/carbondata-spark-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/integration/spark2/carbondata-spark2.iml" filepath="$PROJECT_DIR$/../carbondata/integration/spark2/carbondata-spark2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/store/sdk/carbondata-store-sdk.iml" filepath="$PROJECT_DIR$/../carbondata/store/sdk/carbondata-store-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbondata/streaming/carbondata-streaming.iml" filepath="$PROJECT_DIR$/../carbondata/streaming/carbondata-streaming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/common/common.iml" filepath="$PROJECT_DIR$/../IndexService/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/common/configuration/configuration.iml" filepath="$PROJECT_DIR$/../IndexService/common/configuration/configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/es2hdfs.iml" filepath="$PROJECT_DIR$/es2hdfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../KafkaOffsetMonitor/.idea/modules/kafkaoffsetmonitor.iml" filepath="$PROJECT_DIR$/../KafkaOffsetMonitor/.idea/modules/kafkaoffsetmonitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../KafkaOffsetMonitor/.idea/modules/kafkaoffsetmonitor-build.iml" filepath="$PROJECT_DIR$/../KafkaOffsetMonitor/.idea/modules/kafkaoffsetmonitor-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/metaData/metaData.iml" filepath="$PROJECT_DIR$/../IndexService/metaData/metaData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/metaDataService/metaDataService.iml" filepath="$PROJECT_DIR$/../IndexService/metaDataService/metaDataService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../KafkaOffsetMonitor/project/.idea/modules/project.iml" filepath="$PROJECT_DIR$/../KafkaOffsetMonitor/project/.idea/modules/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../KafkaOffsetMonitor/project/.idea/modules/project-build.iml" filepath="$PROJECT_DIR$/../KafkaOffsetMonitor/project/.idea/modules/project-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/scheduler/scheduler.iml" filepath="$PROJECT_DIR$/../IndexService/scheduler/scheduler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/scheduler/schedulerService/schedulerService.iml" filepath="$PROJECT_DIR$/../IndexService/scheduler/schedulerService/schedulerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/common/storageAdapter/storageAdapter.iml" filepath="$PROJECT_DIR$/../IndexService/common/storageAdapter/storageAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/scheduler/taskManager/taskManager.iml" filepath="$PROJECT_DIR$/../IndexService/scheduler/taskManager/taskManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/test/test.iml" filepath="$PROJECT_DIR$/../IndexService/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/common/utilities/utilities.iml" filepath="$PROJECT_DIR$/../IndexService/common/utilities/utilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/modules/wangchangchun.iml" filepath="$PROJECT_DIR$/../.idea/modules/wangchangchun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/modules/wangchangchun-build.iml" filepath="$PROJECT_DIR$/../.idea/modules/wangchangchun-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IndexService/scheduler/worker/worker.iml" filepath="$PROJECT_DIR$/../IndexService/scheduler/worker/worker.iml" />
     </modules>
   </component>
 </project>

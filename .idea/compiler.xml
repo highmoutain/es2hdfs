@@ -24,9 +24,342 @@
         <processorPath useClasspath="true" />
         <module name="es2hdfs" />
       </profile>
+      <profile default="false" name="Annotation profile for analytics.processor.spark" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-core" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-core" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-bloom" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-bloom" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-spark-datasource" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-spark-datasource" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-hive" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-hive" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-hadoop" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-hadoop" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-store-sdk" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-store-sdk" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-lucene" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-lucene" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-spark-common" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-spark-common" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-spark-common-test" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-spark-common-test" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-streaming" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-streaming" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-datamap-examples" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-datamap-examples" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-common" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-common" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-processing" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-processing" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-cli" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-cli" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-examples" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-examples" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-presto" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-presto" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-spark2" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-spark2" />
+      </profile>
+      <profile default="false" name="Annotation profile for analytics.proccessor" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="analytics.proccessor" />
+      </profile>
+      <profile default="false" name="Annotation profile for test" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="test" />
+      </profile>
+      <profile default="false" name="Annotation profile for taskManager" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="taskManager" />
+      </profile>
+      <profile default="false" name="Annotation profile for cache" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="cache" />
+      </profile>
+      <profile default="false" name="Annotation profile for configuration" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="configuration" />
+      </profile>
+      <profile default="false" name="Annotation profile for utilities" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="utilities" />
+      </profile>
+      <profile default="false" name="Annotation profile for storageAdapter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="storageAdapter" />
+      </profile>
+      <profile default="false" name="Annotation profile for metaData" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="metaData" />
+      </profile>
+      <profile default="false" name="Annotation profile for broker-client" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="broker-client" />
+      </profile>
+      <profile default="false" name="Annotation profile for metaDataService" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="metaDataService" />
+      </profile>
+      <profile default="false" name="Annotation profile for broker-common" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="broker-common" />
+      </profile>
+      <profile default="false" name="Annotation profile for worker" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="worker" />
+      </profile>
+      <profile default="false" name="Annotation profile for broker-server" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="broker-server" />
+      </profile>
+      <profile default="false" name="Annotation profile for bitmap" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="bitmap" />
+      </profile>
+      <profile default="false" name="Annotation profile for schedulerService" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="schedulerService" />
+      </profile>
+      <profile default="false" name="Annotation profile for analytics.streaming.storm" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="analytics.streaming.storm" />
+      </profile>
+      <profile default="false" name="Annotation profile for analytics.streaming.storm (1)" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="analytics.streaming.storm (1)" />
+      </profile>
+      <profile default="false" name="Annotation profile for analytics.idmapping" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="analytics.idmapping" />
+      </profile>
+      <profile default="false" name="Annotation profile for analytics.reportservice" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="analytics.reportservice" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-mv-plan" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-mv-plan" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-mv-core" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-mv-core" />
+      </profile>
+      <profile default="false" name="Annotation profile for carbondata-spark-common-cluster-test" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-spark-common-cluster-test" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="carbondata-examples-flink" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="analytics.idmapping" target="1.8" />
+      <module name="analytics.proccessor" target="1.8" />
+      <module name="analytics.processor.spark" target="1.8" />
+      <module name="analytics.reportservice" target="1.8" />
+      <module name="analytics.streaming.storm" target="1.8" />
+      <module name="analytics.streaming.storm (1)" target="1.8" />
+      <module name="bitmap" target="1.6" />
+      <module name="broker" target="1.8" />
+      <module name="broker-client" target="1.8" />
+      <module name="broker-common" target="1.8" />
+      <module name="broker-server" target="1.8" />
+      <module name="cache" target="1.8" />
+      <module name="carbondata-assembly" target="1.5" />
+      <module name="carbondata-bloom" target="1.7" />
+      <module name="carbondata-cli" target="1.8" />
+      <module name="carbondata-common" target="1.7" />
+      <module name="carbondata-core" target="1.7" />
+      <module name="carbondata-datamap-examples" target="1.7" />
+      <module name="carbondata-examples" target="1.8" />
+      <module name="carbondata-examples-flink" target="1.5" />
+      <module name="carbondata-hadoop" target="1.7" />
+      <module name="carbondata-hive" target="1.7" />
+      <module name="carbondata-lucene" target="1.7" />
+      <module name="carbondata-mv-core" target="1.8" />
+      <module name="carbondata-mv-plan" target="1.8" />
+      <module name="carbondata-parent" target="1.5" />
+      <module name="carbondata-presto" target="1.8" />
+      <module name="carbondata-processing" target="1.7" />
+      <module name="carbondata-spark-common" target="1.7" />
+      <module name="carbondata-spark-common-cluster-test" target="1.7" />
+      <module name="carbondata-spark-common-test" target="1.7" />
+      <module name="carbondata-spark-datasource" target="1.7" />
+      <module name="carbondata-spark2" target="1.7" />
+      <module name="carbondata-store-sdk" target="1.7" />
+      <module name="carbondata-streaming" target="1.7" />
+      <module name="common" target="1.5" />
+      <module name="configuration" target="1.8" />
       <module name="es2hdfs" target="1.8" />
+      <module name="Indexservice" target="1.5" />
+      <module name="metaData" target="1.8" />
+      <module name="metaDataService" target="1.8" />
+      <module name="scheduler" target="1.5" />
+      <module name="schedulerService" target="1.8" />
+      <module name="storageAdapter" target="1.8" />
+      <module name="taskManager" target="1.6" />
+      <module name="test" target="1.8" />
+      <module name="utilities" target="1.8" />
+      <module name="worker" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

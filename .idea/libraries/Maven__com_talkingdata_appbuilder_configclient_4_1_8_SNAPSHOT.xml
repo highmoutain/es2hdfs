@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.talkingdata.appbuilder:configclient:4.1.8-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/appbuilder/configclient/4.1.8-SNAPSHOT/configclient-4.1.8-20180525.023629-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/appbuilder/configclient/4.1.8-SNAPSHOT/configclient-4.1.8-20180525.023629-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/appbuilder/configclient/4.1.8-SNAPSHOT/configclient-4.1.8-20180525.023629-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

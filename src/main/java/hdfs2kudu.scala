@@ -12,20 +12,33 @@ object hdfs2kudu {
   def main(args: Array[String]): Unit = {
     //val pqtpath = args(0)
     val hashPartition = args(0)
+    val hashPartition2 = args(1)
     val spark = SparkSession
       .builder()
       .appName("hdfs2kudu")
       .getOrCreate()
 
-    val df2 = spark.sqlContext.read.options(Map("kudu.master" -> "172.20.3.1:7051","kudu.table" -> "test_table8",
+    val df2 = spark.sqlContext.read.options(Map("kudu.master" -> "172.20.3.1:7051","kudu.table" -> "ae_profile_20e",
       "kudu.faultTolerantScan" -> "true")).kudu
-    val kuduContext = new KuduContext("172.20.3.1:7051", spark.sqlContext.sparkContext)
+    val kuduContext = new KuduContext("172.20.40.18:7051,172.20.40.20:7051,172.20.40.21:7051", spark.sqlContext.sparkContext)
+
     val kuduTableOptions = new CreateTableOptions()
-    kuduTableOptions.addHashPartitions(List("productid", "sourceid", "deviceproductoffset", "lastsessiontime"), hashPartition.toInt).setNumReplicas(1)
+    kuduTableOptions.addHashPartitions(List("productid"), hashPartition.toInt).setNumReplicas(1)
+      .addHashPartitions(List("offset"),hashPartition2.toInt)
     //kuduTableOptions.setRangePartitionColumns(List("productid","sourceid","deviceproductoffset")).setNumReplicas(1)
-    kuduContext.createTable("test_table10", df2.schema, Seq("productid", "sourceid", "deviceproductoffset", "lastsessiontime"), kuduTableOptions)
-    kuduContext.insertRows(df2, "test_table10")
-    kuduContext.deleteTable("test_table10")
+    kuduContext.createTable("ae_profile_30e", df2.schema, Seq("productid", "offset", "accountoffset"), kuduTableOptions)
+
+    //kuduContext.insertRows(df2, "ae_profile_20e")
+//    kuduContext.deleteTable("")
+//
+//    for (i <- 1 to 5) {
+//      val df3 = df2.withColumn("productid1",df2("productid")+ i*10)
+//      val df4 = df3.drop("productid").withColumnRenamed("productid1","productid")
+//      kuduContext.insertRows(df4, "ae_profile_20e")
+//    }
+
+
+    //kuduContext.deleteTable("test_table10")
 
     /*make data
     val df3 = df2.withColumn("productid1",df2("productid")+1)

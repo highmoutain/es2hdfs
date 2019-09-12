@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="es2hdfs" />
+    <profile name="Maven 1" modules="wangchangchun,kafkaoffsetmonitor,project,carbondata-presto,carbondata-bloom,carbondata-datamap-examples,carbondata-examples,carbondata-mv-plan,carbondata-spark2,carbondata-spark-common-test,carbondata-spark-common-cluster-test,carbondata-spark-datasource,carbondata-mv-core,carbondata-hive,carbondata-streaming,es2hdfs,carbondata-lucene,carbondata-spark-common" />
   </component>
 </project>

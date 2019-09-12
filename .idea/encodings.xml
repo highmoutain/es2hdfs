@@ -1,15 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../IndexService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/broker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/broker/broker-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/broker/broker-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/broker/broker-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/common/bitmap" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/common/cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/common/configuration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/common/storageAdapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/common/utilities" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/metaData" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/metaDataService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/scheduler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/scheduler/schedulerService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/scheduler/taskManager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/scheduler/worker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../IndexService/test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../analytics-idmapping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../analytics-processor-spark" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../analytics-reportservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../analytics.streaming.storm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../analytics.streaming.storm-release5.0.0.4" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/assembly" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/datamap/bloom" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/datamap/examples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/datamap/lucene" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/datamap/mv/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/datamap/mv/plan" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/examples/flink" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/examples/spark2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/hadoop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/integration/hive" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/integration/presto" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/integration/spark-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/integration/spark-common-cluster-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/integration/spark-common-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/integration/spark-datasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/integration/spark2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/processing" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/store/sdk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/streaming" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../carbondata/tools/cli" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/JavaHelloWorldJob.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T10.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T11.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T12.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T13.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T14.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T15.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T16.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T21.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T8.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/T9.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/ZooKeeperClient3.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/carbonjdbc.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/createIndex.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/es2hdfs.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/esmakedatausingspark.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/hdfs2kudu.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/helloworld.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/kudu2carbon.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/kudu2carbonSS.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/kudu2mysql.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/kududeletetable.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/kududeletetable.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/kudurenametable.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/streamingest.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/testspark2js.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/wordcount.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../hdfs2kudu/hdfs2kudu/src/main/java/es2hdfs.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../hdfs2kudu/hdfs2kudu/src/main/java/hdfs2kudu.scala" charset="UTF-8" />
+    <file url="file://D:/kankan/太平洋/analytics.processor.5.0.1/analytics.processor.5.0.1" charset="UTF-8" />
   </component>
 </project>

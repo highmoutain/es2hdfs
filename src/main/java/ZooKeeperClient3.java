@@ -18,16 +18,17 @@ public class ZooKeeperClient3 implements Watcher {
     private static int lastsessiontime;
 
     public static void main(String[] args) throws Exception {
-        String path = "/zk-book";
+        //String path = "/zk-book";
         zk = new ZooKeeper("172.20.3.1:2181", 5000, new ZooKeeperClient3());
         connectedSemaphore.await();
         zk.create("/SS", "java-cli".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-        String path1 = zk.create("/SS/PartitionId", "java-cli".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-        String path2 = zk.create("/SS/Lastsessiontime", "java-cli".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-        //System.out.println("Created [" + path1 + "] successfully");
-        lastsessiontime = Integer.parseInt(new String(zk.getData(path, true, stat)));
-        zk.setData(path, "30000000".getBytes(), -1);
-        Thread.sleep(Integer.MAX_VALUE);
+        String path1 = zk.create("/SS/PartitionId", "1".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        String path2 = zk.create("/SS/Lastsessiontime", "1".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        System.out.println("Created [" + path1 + "] successfully");
+        System.out.println("Created [" + path2 + "] successfully");
+//        lastsessiontime = Integer.parseInt(new String(zk.getData(path, true, stat)));
+//        zk.setData(path, "30000000".getBytes(), -1);
+//        Thread.sleep(Integer.MAX_VALUE);
     }
 
     public void process(WatchedEvent event) {

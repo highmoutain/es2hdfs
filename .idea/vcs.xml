@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../IndexService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../analytics-idmapping" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../analytics-processor-spark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../analytics-reportservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../analytics-temp-patch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../analytics.streaming.storm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../analytics.streaming.storm-release5.0.0.4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../carbondata" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="D:/kankan/太平洋/analytics.processor.5.0.1/analytics.processor.5.0.1" vcs="Git" />
   </component>
 </project>

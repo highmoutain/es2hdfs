@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.talkingdata.aeplus:analytics.processor.plugin.default:5.3.8-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/aeplus/analytics.processor.plugin.default/5.3.8-SNAPSHOT/analytics.processor.plugin.default-5.3.8-20180831.075451-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/aeplus/analytics.processor.plugin.default/5.3.8-SNAPSHOT/analytics.processor.plugin.default-5.3.8-20180831.075451-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/aeplus/analytics.processor.plugin.default/5.3.8-SNAPSHOT/analytics.processor.plugin.default-5.3.8-20180831.075451-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

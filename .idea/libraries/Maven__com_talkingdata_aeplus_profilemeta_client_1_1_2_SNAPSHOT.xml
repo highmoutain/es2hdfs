@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.talkingdata.aeplus:profilemeta.client:1.1.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/aeplus/profilemeta.client/1.1.2-SNAPSHOT/profilemeta.client-1.1.2-20180713.022003-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/aeplus/profilemeta.client/1.1.2-SNAPSHOT/profilemeta.client-1.1.2-20180713.022003-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/talkingdata/aeplus/profilemeta.client/1.1.2-SNAPSHOT/profilemeta.client-1.1.2-20180713.022003-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
