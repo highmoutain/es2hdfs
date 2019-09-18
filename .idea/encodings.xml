@@ -71,6 +71,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/kududeletetable.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/kududeletetable.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/kudurenametable.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/profileplusevent.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/streamingest.scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/testspark2js.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/wordcount.scala" charset="UTF-8" />
